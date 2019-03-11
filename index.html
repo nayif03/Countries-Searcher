@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Countries</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="shortcut icon" href="globe-africa-solid.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <main>
+        <div class="container mt-5" id="input">
+            <h1 class="text-white text-center mb-5 bg-info p-3 rounded">WORLD'S COUNTRIES SEARCH ENGINE</h1>
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-12 col-md-10 col-lg-8 mt-5">
+
+                    <form class="card card-sm mt-5">
+
+                        <div class="card-body row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <i class="fas fa-search h4 text-body"></i>
+                            </div>
+                            <!--end of col-->
+                            <div class="col">
+                                <input class="form-control form-control-lg form-control-borderless" type="search"
+                                    placeholder="Search using whatever about country" id="inpValue">
+                            </div>
+                            <!--end of col-->
+                            <div class="col-auto">
+                                <button class="btn btn-lg btn-success" type="button" id="search">Search</button>
+                            </div>
+                            <!--end of col-->
+                        </div>
+                    </form>
+                </div>
+                <!--end of col-->
+            </div>
+        </div>
+
+        <section id="all" class="pb-5">
+
+            <div class="container">
+                <div class="d-flex my-5">
+                    <button type="reset" class="btn btn-info mb-1" onclick="location.reload();">Back to Search <br> <i
+                            class="fas fa-arrow-alt-circle-left"></i></button>
+                    <h1 class="section-title h1">Result of your search</h1>
+                </div>
+
+                <div class="row" id="output">
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+</body>
+
+<script src="./assets/js/main.js"></script>
+
+</html>
