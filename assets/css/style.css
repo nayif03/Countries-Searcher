@@ -163,7 +163,22 @@ span{
     color: #eee;
 }
 
+.animate-bottom {
+    position: relative;
+    animation-name: animatebottom;
+    animation-duration: 2s
+}
 
+@keyframes animatebottom {
+    from {
+        bottom: 100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
 
 
 
