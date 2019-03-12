@@ -47,7 +47,7 @@ function findCountry() {
                                                                             </tr>
                                                                             <tr>
                                                                                 <td><span>Calling Code</span></td>
-                                                                                <td>${country.callingCodes}</td>
+                                                                                <td>+${country.callingCodes}</td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -64,7 +64,7 @@ function findCountry() {
                                             <div class="card-body text-center mt-4">
                                                 <h4 class="card-title">${country.name}</h4>
                                                 <p class="card-text">
-                                                    <b>${country.name}</b> is officially the <b>${country.altSpellings}</b> in <b>${country.subregion}</b>. Its capital in <b>${country.capital}</b>.${(country.borders.length > 0) ? `It is bordered by <b>${country.borders}</b>` : ""}. The country span a combined area of <b>${country.area}</b> square kilometres and a total population of <b>${country.population.toString().slice(0, 2)}.${country.population.toString()[2]}</b> million.
+                                                    <b>${country.name}</b> is officially the <b>${country.altSpellings}</b> in <b>${country.subregion}</b>. Its capital in <b>${country.capital}</b>.${(country.borders.length > 0) ? `It is bordered by <b>${country.borders}</b>` : ""}. The country span a combined area of <b>${country.area}</b> square kilometres and a total population of <b>${country.population/1000000}</b> million.
                                                 </p>
                                                 <ul class="list-inline">
                                                     <li class="list-inline-item">
